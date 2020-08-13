@@ -26,11 +26,11 @@ fun Float.sinify() : Float = Math.sin(this * Math.PI).toFloat()
 fun Canvas.drawJumpingSquareToLine(scale : Float, w : Float, h : Float, paint : Paint) {
     val size : Float = Math.min(w, h) / sizeFactor
     val sf : Float = scale.sinify()
-    val sf1 : Float = sf.divideScale(0, 2)
-    val sf2 : Float = sf.divideScale(1, 2)
+    val sf1 : Float = sf.divideScale(0, parts + 1)
+    val sf2 : Float = sf.divideScale(1, parts + 1)
     save()
     translate(w / 2, h / 2)
-    drawLine(-w * 0.5f * sf1, 0f, w * 0.5f * sf1, 0f, paint)
+    drawLine(-w * 0.5f * sf1, size, w * 0.5f * sf1, size, paint)
     save()
     translate(0f, -h * 0.5f * (1 - sf2))
     scale(sf2, sf2)
@@ -120,7 +120,7 @@ class JumpingSquareToLineView(ctx : Context) : View(ctx) {
         private var prev : JSTLNode? = null
 
         init {
-
+            addNeighbor()
         }
 
         fun addNeighbor() {
