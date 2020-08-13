@@ -199,4 +199,12 @@ class JumpingSquareToLineView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+        fun create(activity : Activity) : JumpingSquareToLineView {
+            val view : JumpingSquareToLineView = JumpingSquareToLineView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
