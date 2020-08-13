@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LinkedJumpingSquareToLineView.iml" filepath="$PROJECT_DIR$/LinkedJumpingSquareToLineView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jumpingsquaretolineview/jumpingsquaretolineview.iml" filepath="$PROJECT_DIR$/jumpingsquaretolineview/jumpingsquaretolineview.iml" />
+    </modules>
+  </component>
+</project>
